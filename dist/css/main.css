@@ -10,13 +10,64 @@
   overflow: hidden;
   align-items: center;
   text-align: center;
-  background: url("../img/model.jpg") center top;
+  background: linear-gradient(to right, rgba(169, 169, 169, 0.9), rgba(169, 169, 169, 0.3)), url("../img/model.jpg") center top;
   background-size: cover;
+}
+.home_name {
+  font-size: 5rem;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+  border-bottom: 2px solid black;
+}
+.home_name--last {
+  color: orange;
+  font-weight: 700;
+}
+
+.menu-btn {
+  position: absolute;
+  z-index: 1;
+  right: 1rem;
+  top: 1rem;
+  width: 28px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn_burger {
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+  width: 28px;
+  height: 3px;
+  background: black;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn_burger::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  width: 28px;
+  height: 3px;
+  background: black;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn_burger::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  width: 20px;
+  height: 3px;
+  background: black;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn_burger.open {
+  transform: rotate(720deg);
+  background: transparent;
 }
 
 body {
   background: darkgrey;
-  color: white;
+  color: black;
   height: 100vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1;
@@ -27,7 +78,7 @@ h1, h2, h3 {
 }
 
 a {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
@@ -42,15 +93,16 @@ main {
   height: 100%;
   width: 100%;
 }
-main .social-icone {
+main .social-icons {
   position: fixed;
   bottom: 1rem;
   left: 1rem;
 }
-main .social-icone a {
+main .social-icons a {
   padding: 0.4rem;
+  transition: all 0.5s ease-in-out;
 }
-main .social-icone a:hover {
+main .social-icons a:hover {
   color: orange;
 }
 
@@ -61,5 +113,5 @@ footer {
   right: 1rem;
   text-align: right;
   padding: 1rem;
-  color: white;
+  color: black;
 }/*# sourceMappingURL=main.css.map */

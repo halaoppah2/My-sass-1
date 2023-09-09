@@ -1,1 +1,1 @@
-Sass first project
+sass project

@@ -1,7 +1,17 @@
 * {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
+}
+
+.home {
+  height: 100%;
+  padding-top: 40vh;
+  overflow: hidden;
+  align-items: center;
+  text-align: center;
+  background: url("../img/model.jpg") center top;
+  background-size: cover;
 }
 
 body {
@@ -32,15 +42,15 @@ main {
   height: 100%;
   width: 100%;
 }
-main .social-icons {
+main .social-icone {
   position: fixed;
   bottom: 1rem;
   left: 1rem;
 }
-main .social-icons a {
+main .social-icone a {
   padding: 0.4rem;
 }
-main .social-icons a:hover {
+main .social-icone a:hover {
   color: orange;
 }
 

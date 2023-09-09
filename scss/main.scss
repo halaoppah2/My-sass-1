@@ -1,4 +1,5 @@
 @import 'config';
+@import 'home';
 
 body{
     background: $primary-color;
@@ -28,11 +29,11 @@ main{
     height: 100%;
     width: 100%;
 
-    .social-icons{
+    .social-icone{
         position: fixed;
         bottom: 1rem;
         left: 1rem;
-
+        
         a{
             padding: 0.4rem;
 

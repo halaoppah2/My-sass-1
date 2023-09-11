@@ -1,4 +1,4 @@
-$primary-color: darkgrey;
+$primary-color: rgb(68, 67, 67);
 $secondary-color: orange;
 
 *{
@@ -16,5 +16,21 @@ $secondary-color: orange;
         @return black;
     } @else{
         @return white;
+    }
+}
+
+@mixin media-md{
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+@mixin media-lg{
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+@mixin media-xl{
+    @media screen and (min-width: 1600px) {
+        @content;
     }
 }
